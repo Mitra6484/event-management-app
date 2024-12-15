@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #008190, #9af1d7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .logo{
+      padding-bottom: 2.5rem;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+  }
+  
+  .logo span {
+      font-family: "Tangerine";
+      font-size: 3.4rem;
+      color: #ffffff; /* White color */
+      text-shadow: 2px 2px 4px #000000;
+      font-weight: bold; /* Black shadow */
+  }
+  
+  .loginbutton{
+      padding: 10px;
+      border: none;
+      background-color: #008190;
+      color: white;
+      border-radius: 5px;
+  }
+  
+  .loginbutton:hover{
+      background-color:#11a4b5 ;
+      color: white;
+      cursor: pointer;
+      transition: ease-in 0.2s;
+  }
+  /* Container for the login page */
+  .login-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    color: #303F60;
+  }
+  
+  /* Form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .form-input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #303F60;
+    box-shadow: 0 0 4px rgba(48, 63, 96, 0.5);
+  }
+  
+  /* Link Styling */
+  .form-links, .form-footer {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #6B7280;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-footer button{
+      padding: 5px;
+      background-color: white;
+      color: #008190;
+      border-width: 0.2px;
+      border-radius: 3px;
+      border-color: grey;
+  
+  
+  }
+  
+  .form-footer button:hover{
+      background-color: #08636d;
+      color: white;
+      transition: ease-in .3s;
+  }
+  
+  .form-link {
+    
+    color:#25709f;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in, transform 0.3s ease-in;
+  }
+  
+  .form-link:hover {
+    color: #54b8d1;
+    transform: scale(1.05);
+  }
+  
+  /* Ease-in Animations */
+  .login-container {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

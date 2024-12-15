@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #008190, #9af1d7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent body overflow */
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    height: 700px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #303f60;
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  /* Header Section */
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #008190;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    color: #6b7280;
+  }
+  
+  /* Radio Buttons Section */
+  .radio-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  input[type='radio'] {
+    display: none;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    color: #008190;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  input[type='radio']:checked + label {
+    color: #11a4b5;
+    font-weight: bold;
+  }
+  
+  label:hover {
+    color: #11a4b5;
+    transition: color 0.3s ease;
+  }
+  
+  /* Content Section */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    overflow-y: auto; /* Allow scrolling within content area */
+    max-height: calc(700px - 140px); /* Ensure content fits within the container */
+  }
+  
+  .info-card {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    color: #303f60;
+    flex-shrink: 0; /* Prevent card from shrinking */
+  }
+  
+  .info-card h3 {
+    font-size: 1.5rem;
+    color: #008190;
+    margin-bottom: 10px;
+  }
+  
+  .info-card .info-amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #008190;
+    margin-bottom: 10px;
+  }
+  
+  .info-card p {
+    font-size: 1.1rem;
+    color: #6b7280;
+  }
+  
+  .info-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .info-card ul li {
+    font-size: 1.1rem;
+    color: #303f60;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .radio-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .content {
+      align-items: flex-start;
+    }
+  }
+  
